@@ -35,13 +35,14 @@ h3{
 .container-b{
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .info{
-    max-width: 50%;
+    width: 50%;
     font-size: 1rem;
     line-height: .1.5rem;
+    margin-left: -1rem;
 }
 
 .hist{
