@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+*{box-sizing: border-box;}
+
+h1{
+    text-align: center;
+    text-shadow: rgba(0,0,255,5) -1px -2px 0.5em;
+}
+body{
+    background-color: black;
+    font-family: 'Kaushan Script', cursive;
+    color: yellow;   
+}
+
+a:link{
+    color: brown;
+    border-bottom: yellow;
+}
+
+a:visited{
+    color: aqua;
+}
+
+h3{
+    font-size: small;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container-b{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.info{
+    max-width: 50%;
+    font-size: 1rem;
+    line-height: .1.5rem;
+}
+
+.hist{
+    border-color: yellow;
+    border-style: dashed;
+    border-width: 1px;
+    flex-direction: row;
+    padding: 1rem;
+    width: 50%;
+}
+
+.col + .col{
+    margin-left: 1rem;
+}
+
+.contato{
+    text-align: center;
+    font-size: 3rem;
+}
+.contato h3{
+    font-size: 2rem;
+}
+
+.vegan{
+    text-align: center;
+    padding: 2rem;
+}
+h4{
+    padding: 2rem;
+}
+.vegan img{
+    width: 4rem;
+}
+.effect:hover{
+    color: yellow;
+    opacity: .75;
+    transition: color 1000ms linear;
+}
+
+.vegan #date{
+    padding: 2rem;
+}
+
+#footer{
+    background-color: rgb(51, 3, 3);
+    color: rgb(209, 230, 29);
+    text-align: center;   
+    width: 100%;   
+}
+
+#date{
+    text-align: center;
+    margin: 0;
+}
