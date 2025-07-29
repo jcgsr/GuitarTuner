@@ -3,35 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Metronome</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <title>Metrônomo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+
   </head>
   <body>
-    <div class="metronome">
-      <div class="title">Simple Metronome</div>
-      <button id="play-button" class="">
-        <div id="play-pause-icon" class="play"></div>
-      </button>
+    <main>
 
-      <div class="tempo-controls">
-        <button class="tempo-change" data-change="-5">-5</button>
-        <button class="tempo-change" data-change="-1">-</button>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">AFINADOR</a></li>
+          <li><a href="metronome.html">METRÔNOMO</a></li>
+          <li><a href="about.html">INFO</a></li>
+        </ul>
+      </nav>
+      <div class="metronome">
 
-        <div class="tempo-container">
-          <div id="tempo">120</div>
-          <div class="bpm">bpm</div>
+        <h1>METRÔNOMO</h1>
+        <button id="play-button" class="">
+          <div id="play-pause-icon" class="play"></div>
+        </button>
+
+        <div class="tempo-controls">
+          <button class="tempo-change" data-change="-5">-5</button>
+          <button class="tempo-change" data-change="-1">-</button>
+
+          <div class="tempo-container">
+            <div id="tempo">80</div>
+            <div class="bpm">bpm</div>
+          </div>
+
+          <button class="tempo-change" data-change="+1">+</button>
+          <button class="tempo-change" data-change="+5">+5</button>
         </div>
 
-        <button class="tempo-change" data-change="+1">+</button>
-        <button class="tempo-change" data-change="+5">+5</button>
+        <script src="metronome.js"></script>
+        <script src="app.js"></script>
       </div>
-
-      <div class="created-by">
-        Created by <a href="https://grantjam.es" target="_blank">Grant James</a>
-      </div>
-
-      <script src="metronome.js"></script>
-      <script src="app.js"></script>
-    </div>
+    </main>
   </body>
 </html>
