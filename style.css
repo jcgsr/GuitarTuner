@@ -1,100 +1,191 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
 
-*{box-sizing: border-box;}
-
-h1{
-    text-align: center;
-    text-shadow: rgba(0,0,255,5) -1px -2px 0.5em;
-}
-body{
-    background-color: black;
-    font-family: 'Kaushan Script', cursive;
-    color: yellow;   
+* {
+  box-sizing: border-box;
 }
 
-
-a:link{
-    color: brown;
-    border-bottom: yellow;
+h1 {
+  text-align: center;
+  text-shadow: rgba(0, 0, 255, 5) -1px -2px 0.5em;
+}
+body {
+  background-color: black;
+  font-family: "Kaushan Script", cursive;
+  color: yellow;
 }
 
-a:visited{
-    color: aqua;
+a:link {
+  color: brown;
+  border-bottom: yellow;
 }
 
-h3{
-    font-size: small;
+a:visited {
+  color: aqua;
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+h3 {
+  font-size: small;
 }
 
-.container-b{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
 
-.info{
-    width: 50%;
-    font-size: 1rem;
-    line-height: .1.5rem;
-    margin-left: -1rem;
+.container-b {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
 }
 
-.hist{
-    border-color: yellow;
-    border-style: dashed;
-    border-width: 1px;
-    flex-direction: row;
-    padding: 1rem;
-    width: 50%;
+.info {
+  width: 50%;
+  font-size: 1rem;
+  line-height: 0.1.5rem;
+  margin-left: -1rem;
 }
 
-.col + .col{
-    margin-left: 1rem;
+.hist {
+  border-color: yellow;
+  border-style: dashed;
+  border-width: 1px;
+  flex-direction: row;
+  padding: 1rem;
+  width: 50%;
 }
 
-.contato{
-    text-align: center;
-    font-size: 3rem;
-}
-.contato h3{
-    font-size: 2rem;
+.col + .col {
+  margin-left: 1rem;
 }
 
-.vegan{
-    text-align: center;
-    padding: 2rem;
+.contato {
+  text-align: center;
+  font-size: 3rem;
 }
-h4{
-    padding: 2rem;
-}
-.vegan img{
-    width: 4rem;
-}
-.effect:hover{
-    color: yellow;
-    opacity: .75;
-    transition: color 1000ms linear;
+.contato h3 {
+  font-size: 2rem;
 }
 
-.vegan #date{
-    padding: 2rem;
+.vegan {
+  text-align: center;
+  padding: 2rem;
+}
+h4 {
+  padding: 2rem;
+}
+.vegan img {
+  width: 4rem;
+}
+.effect:hover {
+  color: yellow;
+  opacity: 0.75;
+  transition: color 1000ms linear;
 }
 
-#footer{
-    background-color: rgb(51, 3, 3);
-    color: rgb(209, 230, 29);
-    text-align: center;   
-    width: 100%;   
+.vegan #date {
+  padding: 2rem;
 }
 
-#date{
-    text-align: center;
-    margin: 0;
+#footer {
+  background-color: rgb(51, 3, 3);
+  color: rgb(209, 230, 29);
+  text-align: center;
+  width: 100%;
+}
+
+#date {
+  text-align: center;
+  margin: 0;
+}
+/*metronome*/
+.metronome {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+#play-button {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#tempo {
+  font-size: 40px;
+}
+
+.bpm {
+  font-size: 12px;
+  text-align: center;
+}
+
+.tempo-controls {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+.tempo-container {
+  margin: 0 15px;
+}
+
+button {
+  padding: 6px;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #2a4949;
+  color: #e9e9e9;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.created-by {
+  margin-top: 40px;
+}
+
+a {
+  color: #e9e9e9;
+}
+
+a:hover {
+  color: #356161;
+}
+
+.play {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 50px solid #e9e9e9;
+  margin-left: 15px;
+}
+
+.pause {
+  width: 45px;
+  height: 60px;
+  border: none;
+  border-left: 15px solid #e9e9e9;
+  border-right: 15px solid #e9e9e9;
 }
